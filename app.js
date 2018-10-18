@@ -46,7 +46,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         console.log(score[activePlayer]);
         
         //Check winner
-        if (score[activePlayer] >= 20) {
+        if (score[activePlayer] >= 50) {
             diceDOM.style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
